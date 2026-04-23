@@ -9,5 +9,8 @@ jobs:
         run: echo "Hello World"
       - name: Setup by Repo Clone
         uses: actions/checkout@v4
+      - name: Steup node version
+        uses: actions/setup-node@v4
+        with: 20.x
       - name: Greet User
         run: node index.js
